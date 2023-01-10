@@ -1,0 +1,6 @@
+<p class="text-primary mb-3 fw-bold">Componente padre</p>
+<div class="mb-3">
+  <label for="txtMensaje" class="form-label">Mensaje:</label>
+  <input [(ngModel)]="message" name="txtMensaje" type="text" class="form-control" id="txtMensaje">
+</div>
+<app-hijo [message]="message"></app-hijo>
