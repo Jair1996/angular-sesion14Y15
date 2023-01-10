@@ -1,0 +1,34 @@
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title text-center mb-5">Sesión 15</h5>
+    <h5 class="card-text text-primary">{{ titulo }}</h5>
+    <hr />
+    <section>
+      <p class="fw-bold">Event biding</p>
+      <button (click)="toggleContentDataBinding()" class="btn btn-primary">
+        {{ showContentDataBinding ? "Ocultar" : "Mostrar" }}
+      </button>
+      <div *ngIf="showContentDataBinding" class="alert alert-success mt-4">
+        <p class="mb-0">
+          Event Binding, es el mecanismo de data binding mediante el cual
+          trabaja con los eventos que se encuentran en el DOM
+        </p>
+      </div>
+    </section>
+    <hr />
+    <section>
+      <p class="fw-bold">Two way binding</p>
+      <div class="alert alert-success mt-4">
+        <p class="mb-0">{{ textTwoWayBinding }}</p>
+      </div>
+      <div class="mt-4">
+        <textarea
+          [(ngModel)]="textTwoWayBinding"
+          class="form-control text-muted"
+          name="textArea"
+          rows="5"
+        ></textarea>
+      </div>
+    </section>
+  </div>
+</div>

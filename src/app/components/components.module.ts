@@ -4,6 +4,7 @@ import { ComunicacionComponent } from './comunicacion/comunicacion.component';
 import { PadreComponent } from './padre/padre.component';
 import { HijoComponent } from './hijo/hijo.component';
 import { FormsModule } from '@angular/forms';
+import { DataBindingComponent } from './data-binding/data-binding.component';
 
 
 
@@ -11,10 +12,12 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     ComunicacionComponent,
     PadreComponent,
-    HijoComponent
+    HijoComponent,
+    DataBindingComponent
   ],
   exports: [
-    ComunicacionComponent
+    ComunicacionComponent,
+    DataBindingComponent
   ],
   imports: [
     CommonModule,
